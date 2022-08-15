@@ -135,3 +135,14 @@ contract DefaultValues{
 
 }
 ```
+
+## Constants
+
+Set variables as constants to reduce gas fees
+
+```ts
+contract Constants{
+    address public constant MY_ADDRESS = 0x657D3C03e450E4815f3411Aa26713A2A90e9Ad83
+    uint public constant MY_UINT = 123;
+}
+```
