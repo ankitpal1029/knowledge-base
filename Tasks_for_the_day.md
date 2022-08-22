@@ -1,3 +1,3 @@
 # Things to Do
 
-- [ ] sruthi
+- [x] sruthi
