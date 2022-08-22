@@ -1,3 +1,5 @@
+# Intermediate
+
 ## Errors
 
 You can throw error in one of three ways:

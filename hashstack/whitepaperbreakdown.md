@@ -1,4 +1,4 @@
-# White Paper Simple
+# White Paper Simplified
 
 ## Problem
 
