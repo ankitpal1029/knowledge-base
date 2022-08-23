@@ -76,4 +76,4 @@ Based on category liquidation price set, upon breaching this price the loan is l
 - fail safe liquidation: automated liquidation if liquidation discount drops by 25% with no takers. (where does 25% come from?)
 - Liquidator processed liquidations, shared between protocol and liquidator (3:7), no discount sharing for protocol processed liquidation
 
-## Updated Interest Rates
+## Updated Interest Rates, Dynamic Interest Algorithm
