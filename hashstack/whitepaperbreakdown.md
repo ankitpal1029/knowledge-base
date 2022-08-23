@@ -38,11 +38,42 @@ don't offer dividends, earn a fixed apy of 7.8% since no lock in period
 
 ### Borrower Flow
 
-- Fixed loans: pay 15%
+Borrower must provide collateral 33% or more of loan sum.
+
+- Fixed loans: pay 15%, deployed as fixed deposit gets 10% with no dividends
 - Flexible loans: 18%
 
-protocol deploys collateral as a fixed deposit with mcp of 2 weeks earning 10% apy on collateral, no dividends here
+Protocol deploys collateral as a fixed deposit with mcp of 2 weeks earning 10% apy on collateral, no dividends here
 
-[hashstack](https://blog.hashstack.finance/deconstructing-hashstacks-dynamic-interest-algorithm-dial/)
+3 Day Timelock on collateral of loans, to retrieve collateral deployed collateral for release/withdrawal.
 
-[Potocol](https://github.com/0xHashstack/whitepaper/tree/main/Open%20protocol/v1.0%5Bdraft%5D)
+- Using Paraswap integration you can swap loans into secondary markets.
+
+### Permissible Withdrawal
+
+Permissible Withdrawal = min(70% collateral, 100% loan value);
+
+### Accrued yield
+
+- Balances updated everytime user uses protocol, reduces operational costs
+- For debt usdt equivalent is deducted from collateral till collateral is no longer in acceptable CDR range
+
+### Liquidation
+
+![](assets/2022-08-23-06-14-34.png)
+
+When collateral is near liquidation price notification is sent to user, Liquidation trigger passed with price:
+
+![](assets/2022-08-23-06-15-42.png)
+
+Based on category liquidation price set, upon breaching this price the loan is liquidated.  
+![](assets/2022-08-23-06-18-27.png)
+
+### Liquidator
+
+- Any one with enough HASH deposits as a 3 month mcp
+- Liquidators incentivised to liquidate over levereged loans (lower CDR) since greater discount of 2.4% per type of loan.
+- fail safe liquidation: automated liquidation if liquidation discount drops by 25% with no takers. (where does 25% come from?)
+- Liquidator processed liquidations, shared between protocol and liquidator (3:7), no discount sharing for protocol processed liquidation
+
+## Updated Interest Rates

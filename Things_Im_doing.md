@@ -8,3 +8,6 @@
       ![](assets/2022-08-22-15-55-08.png)
 - [ ] [Meta transactions](https://betterprogramming.pub/ethereum-erc-20-meta-transactions-4cacbb3630ee)
       ![](assets/2022-08-22-15-54-16.png)
+- [ ] [Hashstack](https://blog.hashstack.finance/deconstructing-hashstacks-dynamic-interest-algorithm-dial/)
+
+- [ ] [Potocol](https://github.com/0xHashstack/whitepaper/tree/main/Open%20protocol/v1.0%5Bdraft%5D)
