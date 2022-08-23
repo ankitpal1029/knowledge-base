@@ -1,5 +1,15 @@
 # White Paper Simplified
 
+```
+Essentially, people can take a loan keeping their current tokens as colllateral
+hence not losing their positions. This loan is also a leveraged loan.
+Where of the collateral 70% can only be withdraw by the person and the rest is
+held by the protocol. Upon crossing a certain threshold for value of loan it gets
+liquidated by liquidators incetivised by taking a small profit off the assets that the
+borrower purchased on the platform. If no liquidators pick it up then the protocol
+liquidates it in a centralised manner.
+```
+
 ## Problem
 
 Problems in current DeFi as compared to tradefi
@@ -77,3 +87,9 @@ Based on category liquidation price set, upon breaching this price the loan is l
 - Liquidator processed liquidations, shared between protocol and liquidator (3:7), no discount sharing for protocol processed liquidation
 
 ## Updated Interest Rates, Dynamic Interest Algorithm
+
+- Interest rate model that charges borrowers an apr just above the amount needed to repay the depositors. (like a rainy day fund)
+  ![](assets/2022-08-23-11-47-05.png)
+- x is the offset, can be set in the future by governance as well
+- why are we getting a random number in between range didn't make sense?
+- correlation between different locking periods is 1.2 on testnet as well
