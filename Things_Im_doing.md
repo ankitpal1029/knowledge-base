@@ -1,6 +1,7 @@
 # Things I'm Doing/ Should be doing
 
-- [ ] [Zero knowledge](https://github.com/matter-labs/awesome-zero-knowledge-proofs)
+- [ ] [A zk starknet blog](https://hackmd.io/@dcbuild3r/Bkj2L02uq)
+-- [ ] [Zero knowledge](https://github.com/matter-labs/awesome-zero-knowledge-proofs)
       ![](assets/2022-08-22-15-55-56.png)
 - [ ] [Math in Solidity](https://medium.com/coinmonks/math-in-solidity-part-3-percents-and-proportions-4db014e080b1)
       ![](assets/2022-08-22-15-54-42.png)
