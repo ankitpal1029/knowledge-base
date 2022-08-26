@@ -119,3 +119,61 @@ end
 
 - First allocating space using `alloc()`
 - Populate values in the array using `assert`
+
+[15 Puzzle: reference for anything written below](https://www.cairo-lang.org/docs/hello_cairo/puzzle.html)
+
+## Gotchas
+
+### References
+
+- doesn't invoke any computation
+
+```rust
+let x = y*y*y
+assert x*x = 1
+```
+
+the assert will turn into
+
+```rust
+assert (y*y*y)*(y*y*y) = 1
+```
+
+### Tempvars
+
+- cairo immutable so temporary variable is a misnomer
+  for example
+- this **does** trigger computation
+
+```rust
+tempvar a = expr
+```
+
+- here one memory cell allocated and named a
+- this a is assigned expr
+- this reference maybe revoked if there is a jump in the code
+- scope of return values of a function are like `tempvars` if you want to store them  
+  keep them in local variables
+
+### Local variables
+
+- similar to temvars except can't be accessed beyond the function where it was  
+  declared
+- need to specify `alloc_locals`
+
+### No < operator
+
+- you have to use a builtin for this
+
+**come back to this**
+
+## Tuples
+
+- finite lists like in python of a specific type
+- zero based indexing
+
+## Dictionaries/map
+
+- closest thing to modifiable data type
+- using squashed dicts you convert changed values into the last updated, in case of  
+  new and first shown in case of prev value.
