@@ -1,6 +1,7 @@
 # Things to Do
 
-- [ ] setup Cairo and some basics
+- [ ] fill swimming form
+- [ ] finish tests
 - [ ] Work to complete the solidity tutorial
 - [ ] nptel
 - [x] emda air thing
