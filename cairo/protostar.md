@@ -116,3 +116,31 @@ $ protostar -p devnet deploy ./build/main.json
 [Read about migrations later](https://docs.swmansion.com/protostar/docs/tutorials/deploying/migrations)
 
 ## Testing
+
+- All files starting with `test_` in `tests` folder are considered seperate test cases
+- To do setting up work before testing run `__setup__` hook
+
+```rust
+%lang starknet
+
+@external
+func __setup__():
+    %{ context.contract_a_address =
+    deploy_contract("./tests/integration/testing_hooks/basic_contract.cairo")
+    .contract_address %}
+    return ()
+end
+
+@external
+func test_something():
+    tempvar contract_address
+    %{ ids.contract_address = context.contract_a_address %}
+
+    # ...
+
+    return ()
+end
+```
+
+- You can pass `context` variables to pass data from `__setup__` to the test
+- Use hints to do the testing
