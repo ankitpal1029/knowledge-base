@@ -1,5 +1,6 @@
 # Things I'm Doing/ Should be doing
 
+- [ ] [Cool starknet learning resource](https://learn.0xparc.org/)
 - [ ] [A zk starknet blog](https://hackmd.io/@dcbuild3r/Bkj2L02uq)
 - [ ] [Zero knowledge](https://github.com/matter-labs/awesome-zero-knowledge-proofs)
       ![](assets/2022-08-22-15-55-56.png)
