@@ -13,3 +13,4 @@
 - [ ] [Hashstack](https://blog.hashstack.finance/deconstructing-hashstacks-dynamic-interest-algorithm-dial/)
 
 - [ ] [Potocol](https://github.com/0xHashstack/whitepaper/tree/main/Open%20protocol/v1.0%5Bdraft%5D)
+- [ ] [leetcode](https://www.linkedin.com/posts/guptanikita16_google-online-assessment-questions-activity-6971158521694367744-WNpg?utm_source=share&utm_medium=member_android)
