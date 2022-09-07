@@ -1,5 +1,6 @@
 # Things I'm Doing/ Should be doing
 
+- [ ] [immunefi](https://www.youtube.com/watch?v=nrnC2Z-ZZow)
 - [ ] [Cool starknet learning resource](https://learn.0xparc.org/)
 - [ ] [A zk starknet blog](https://hackmd.io/@dcbuild3r/Bkj2L02uq)
 - [ ] [Zero knowledge](https://github.com/matter-labs/awesome-zero-knowledge-proofs)
